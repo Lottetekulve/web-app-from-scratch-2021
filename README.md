@@ -1,6 +1,9 @@
 <!-- Add a link to your live demo in Github Pages 🌐-->
+Link naar live demo: https://lottetekulve.github.io/web-app-from-scratch-2021/
 
 <!-- ☝️ replace this description with a description of your own work -->
+Rijksmuseaum webapp. Data gekregen uit API.
+API link: https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh
 
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
