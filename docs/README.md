@@ -18,9 +18,12 @@ Ik gebruik nu alleen nog de titel van het kunstwerk en de link naar het kunstwer
 <!-- How about a section that describes how to install this project? 🤓 -->
 Dit is hoe ik de data heb opgehaald uit de API:
 
-const request = new XMLHttpRequest()
+const request = new XMLHttpRequest() 
+
 request.open('GET', 'https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh', true)
+
 request.onload = function (){}
+
 request.send()
 
 <!-- ...but how does one use this project? What are its features 🤔 -->
@@ -37,4 +40,5 @@ Done:
 Do:
 - Bedenken welke data ik nodig heb
 - Bedenken wat voor webapp ik wil gaan maken, wat gaat functie zijn etc.
+
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
