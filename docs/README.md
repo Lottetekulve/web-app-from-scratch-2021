@@ -15,6 +15,7 @@ Content:
 
 Ik gebruik nu alleen nog de titel van het kunstwerk en de link naar het kunstwerk op de website van t rijksmuseum. Ik ga aankomende week kijken anar wat voor content ik wil gaan gebruiken.
 
+
 <!-- How about a section that describes how to install this project? 🤓 -->
 Dit is hoe ik de data heb opgehaald uit de API:
 
@@ -32,6 +33,7 @@ request.send()
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
 
 <!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+
 Done:
 - Data uit API gehaald
 - Begin gemaakt van de HTML, CSS en JS
