@@ -1,7 +1,7 @@
 const app = document.getElementById('root')
 
 const foto = document.createElement('img')
-foto.src = 'rijksmuseum.jpg'
+foto.src = './images/rijksmuseum.jpg'
 
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
