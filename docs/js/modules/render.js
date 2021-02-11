@@ -1,4 +1,4 @@
-export default function render(data) {
+export function render(data) {
   const app = document.getElementById("blok");
 
   //container aanmaken per artObject
@@ -33,4 +33,8 @@ export default function render(data) {
 
   //puts anchor als child van de app
   app.appendChild(link);
+}
+
+export function detailPage(details) {
+
 }
