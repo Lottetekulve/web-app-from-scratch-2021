@@ -5,6 +5,12 @@ Link naar live demo: https://lottetekulve.github.io/web-app-from-scratch-2021/
 Rijksmuseaum webapp. Data gekregen uit API.
 API link: https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh
 
+Week 2
+![](img/actordiagram.png)
+
+
+Week 1
+
 Dit is de eerste week van het vak Wafs, deze week heb ik voor het eerst data uit een API gehaald door middel van JS. Deze data ga ik gebruiken om een webapp te maken voor het rijksmuseum. Een klein deel van de data staat nu al in de HTML. 
 <!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
 
@@ -44,3 +50,4 @@ Do:
 - Bedenken wat voor webapp ik wil gaan maken, wat gaat functie zijn etc.
 
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+
