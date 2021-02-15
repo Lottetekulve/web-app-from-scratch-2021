@@ -6,7 +6,7 @@ Rijksmuseaum webapp. Data gekregen uit API.
 API link: https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh
 
 Week 2
-![](img/actordiagram.png)
+![](./images/actordiagram.png)
 
 
 Week 1
