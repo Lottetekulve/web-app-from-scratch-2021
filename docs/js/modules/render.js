@@ -1,5 +1,5 @@
 export function render(data) {
-  clearElement(section2)
+  clearElement("section2")
 
   const app = document.getElementById("section1"),
       container = document.createElement("section"),

@@ -9,7 +9,7 @@ export default function renderArtObject (objectNumber) {
 }
 
   function renderSingleArtObject(data) {
-    clearElement(section1)
+    clearElement("section1")
 
     const app = document.getElementById("section2"),
       container = document.createElement("section"),
