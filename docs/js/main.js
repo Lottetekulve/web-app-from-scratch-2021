@@ -1,10 +1,7 @@
 import { render } from "./modules/render.js";
 import getData from "./modules/api.js";
 import renderArtObject from './modules/detailPage.js';
-// import clearData from './modules/clearApi.js'
 
-// let cleanedArtObjects = clearData(artObjects);
-// console.log('cleanedArtObjects')
 
 const url = "https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh&ps=200";
 
