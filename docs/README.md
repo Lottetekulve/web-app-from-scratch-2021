@@ -2,7 +2,7 @@
 Link naar live demo: https://lottetekulve.github.io/web-app-from-scratch-2021/
 
 <!-- ☝️ replace this description with a description of your own work -->
-Rijksmuseaum webapp. Data gekregen uit API.
+Rijksmuseum webapp. Data gekregen uit API.
 API link: https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh
 
 Week 2
@@ -19,7 +19,7 @@ Dit is de eerste week van het vak Wafs, deze week heb ik voor het eerst data uit
 <!-- Maybe a table of contents here? 📚 -->
 Content:
 
-Ik gebruik nu alleen nog de titel van het kunstwerk en de link naar het kunstwerk op de website van t rijksmuseum. Ik ga aankomende week kijken anar wat voor content ik wil gaan gebruiken.
+Ik gebruik nu alleen nog de titel van het kunstwerk en de link naar het kunstwerk op de website van t rijksmuseum. Ik ga aankomende week kijken naar wat voor content ik wil gaan gebruiken.
 
 
 <!-- How about a section that describes how to install this project? 🤓 -->

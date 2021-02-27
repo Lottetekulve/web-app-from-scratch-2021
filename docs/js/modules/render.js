@@ -1,38 +1,30 @@
 export function render(data) {
-  clearElement(blok2)
-  const app = document.getElementById("blok");
-  
-  //container aanmaken per artObject
-  const container = document.createElement("div");
-  container.setAttribute('class', 'container')
+  clearElement(section2)
 
-  //image aanmaken per artObject
-  const picture = document.createElement("img");
+  const app = document.getElementById("section1"),
+      container = document.createElement("section"),
+      picture = document.createElement("img"),
+      link = document.createElement("a"),
+      title = document.createElement("h2"),
+      author = document.createElement("h3");
+
+
   picture.src = data.webImage.url;
-
-  // Link naar rijksmuseum pagina van artObject
-  const link = document.createElement("a");
+  container.setAttribute('class', 'container');
   link.href = `#artobject/${data.objectNumber}`;
-
-  //titel van elk artObject weergeven in h1
-  const title = document.createElement("h2");
   title.textContent = data.title;
+  author.textContent = data.principalOrFirstMaker;
 
-  // p aangemaakt voor principalOrFirstMaker
-  const auteur = document.createElement("h3");
-  auteur.textContent = data.principalOrFirstMaker;
-
-  // puts container als child van anchor. Link dus om hele container heen
-  link.appendChild(container);
   
-
-  //puts () als child van container
+  // puts the attributes in the containers
+  link.appendChild(container);
   container.appendChild(picture);
   container.appendChild(title);
-  container.appendChild(auteur);
+  container.appendChild(author);
 
   //puts anchor als child van de app
   app.appendChild(link);
+
 
   function clearElement(element) {
     element.innerHTML = ''

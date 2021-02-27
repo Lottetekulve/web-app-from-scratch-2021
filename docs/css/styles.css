@@ -1,18 +1,18 @@
  html {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
     background: hsl(35, 75%, 97%);
     max-width: 1500px;
     margin: 0 auto;
   }
 
-  #blok {
+  #section1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  #blok2 {
+  #section2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,11 +46,20 @@
     width: 100%
   }
 
+  h4{
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    font-weight:lighter;
+    margin: 5px ;
+    width: 100%
+  }
+
   img {
     display: block;
     margin: 1rem auto;
-    max-width: 80%;
-    max-height: 300px;
+    max-width: 90%;
+    max-height: 400px;
   }
 
   a {
