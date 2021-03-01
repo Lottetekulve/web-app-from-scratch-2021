@@ -52,11 +52,17 @@ Filter gebruik ik om de data te filteren en om een filter te hebben op de overzi
    ` }}); }}`
 
 ### Map:
+Een klein voorbeeld van map
+`const map1 = array1.map(x => x * 2);`
 
 ### Reduce:
+Een klein voorbeeld van reduce
+`console.log(array2.reduce(reducer));`
 
 ## Feedback aan de gebruiker
-Loadingstate
+Loadingstate:
+Dit hb ik gedaan doormiddel van een timer.
+`setTimeout(() => loader.style.display = 'none', 2000);`
 
 ## Proces per week
 ### Week 3
@@ -83,15 +89,15 @@ Do:
 ### Week 2
 Deze week hebben wij weer enkele opdrachten mee gekregen om aan te werken:
 
- 1. create actor diagram:
+ 1. Create actor diagram:
  ![](./images/actordiagram.png)
  In de actor diagram zie je welke modules ik heb en welke functions hierin gebruikt worden.
 
- 2. Create interaction diagram
+ 2. Create interaction diagram:
 ![](./images/interactiondiagram.png)
  In deze diagram zie je hoe de interactie gaat tussen de verschillende modules en functions.
 
- 3. Handle routes to the detailpages
+ 3. Handle routes to the detailpages:
 Ik ben bezig geweest met het maken van een detail page per art object. Dit heb ik gedaan doormiddel van routie. 
 Link naar routie: http://projects.jga.me/routie/
 Op de detailpage laat ik meer informatie zien van de art objects. Namelijk de artikel nummers en plaats waar het voor het eerst gemaakt is.

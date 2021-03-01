@@ -11,17 +11,13 @@ export function renderArtObject (objectNumber) {
 }
 
 
-
-
 //clean element function
 export function clearElement(element) {
   element.innerHTML = ''
 }
 
 
-
-
-//fucntion for each art object///
+//function for each art object///
 
 function renderSingleArtObject(data) {
   clearElement(section1)

@@ -2,7 +2,7 @@ html {
   font-family: 'Roboto', sans-serif;
   color: black;
   background: hsl(35, 75%, 97%);
-  max-width: 1350px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ a {
 
 .container {
   text-align: center;
-  width: 400px;
+  width:350px;
   margin: 20px;
   padding: 20px;
   background: rgb(255, 255, 255);
