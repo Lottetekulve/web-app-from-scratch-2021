@@ -1,16 +1,18 @@
+import { clearElement } from './detailPage.js'
 ////render for each artobject/////
-
 
 export function render(data) {
   clearElement(section2)
 
   ///creating elememts///
-  const app = document.getElementById("section1"),
-      container = document.createElement("section"),
-      picture = document.createElement("img"),
-      link = document.createElement("a"),
-      title = document.createElement("h2"),
-      author = document.createElement("h3");
+  const
+    app = document.getElementById("section1"),
+    container = document.createElement("section"),
+    picture = document.createElement("img"),
+    link = document.createElement("a"),
+    title = document.createElement("h2"),
+    author = document.createElement("h3")
+  ;
       
 
   /// putting values to the elements///
@@ -29,8 +31,4 @@ export function render(data) {
   container.appendChild(author);
   app.appendChild(link);
 
-
-  function clearElement(element) {
-    element.innerHTML = ''
-  }
 }
