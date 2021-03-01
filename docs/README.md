@@ -3,7 +3,7 @@ Link naar live demo: https://lottetekulve.github.io/web-app-from-scratch-2021/
 
 <!-- ☝️ replace this description with a description of your own work -->
 
-## Table of content:
+# Table of content:
 - About the app
 - Get de data van de api
 - Gebruik van de data
@@ -12,19 +12,19 @@ Link naar live demo: https://lottetekulve.github.io/web-app-from-scratch-2021/
 - Proces per week
 
 
-# Rijksmuseum webapp. Data gekregen uit API:
+## Rijksmuseum webapp. Data gekregen uit API:
 API link: https://www.rijksmuseum.nl/api/nl/collection/?key=7TAeATmh
 In deze API is voor alle art objecten uit het rijksmuseum informatie te vinden. Denk aan de kunstenaar, uit welk jaar, waar het gemaakt is en natuurlijk de titel met een afbeelding. Daarnaast worden de artikel nummers vernoemd en links naar de detailpagina van het kunstwerk op de website van het rijksmuseum. 
 Er komt overzichtspagina waarbij je alle art objects kan zien, samen met hun titel en de kunstenaar. Op de overzichtspagina komen filters om makkelijk een art object te kunnen terug vinden. Daarnaast krijgt elk art object een eigen detail page waar nog wat meer informatie te vinden zal zijn over de kunstwerken.
 
-# Get de data van de api:
+## Get de data van de api:
 - `export default function getData(url) { `
   `return fetch(url)`
     `.then((response) => response.json())`
    ` .catch((err) => console.log("Error: " + err));`
 `}`
 
-# Gebruik van de data
+## Gebruik van de data
 - `export function render(data) {`
   `clearElement(section2)`
 
@@ -34,7 +34,7 @@ Er komt overzichtspagina waarbij je alle art objects kan zien, samen met hun tit
 - `link.appendChild(container);`
   `container.appendChild(picture);`
 
-# Filter, map & reduce
+## Filter, map & reduce
 Filter:
 - `function buttonFunction2 () {`
       `clearElement(section1)`
@@ -47,11 +47,11 @@ Filter:
        ` objectsOfArt2.forEach((artObject) => { render(artObject) } );`
    ` }}); }}`
 
-# Feedback aan de gebruiker
+## Feedback aan de gebruiker
 
 
-# Proces per week
-Week 3
+## Proces per week
+### Week 3
 Deze week hebben wij weer enkele opdrachten mee gekregen om aan te werken:
 
 1. Manipulate, filter and sort data 
@@ -72,7 +72,7 @@ Do:
 - [x] Map en Reduce.
 
 
-Week 2
+### Week 2
 Deze week hebben wij weer enkele opdrachten mee gekregen om aan te werken:
 
  1. create actor diagram:
@@ -98,7 +98,7 @@ Do:
 - [x]Actor diagram afmaken
 
 
-Week 1
+### Week 1
 
 Dit is de eerste week van het vak Wafs, deze week heb ik voor het eerst data uit een API gehaald door middel van JS. Deze data ga ik gebruiken om een webapp te maken voor het rijksmuseum. Een klein deel van de data staat nu al in de HTML. 
 
