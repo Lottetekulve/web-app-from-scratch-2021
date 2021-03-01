@@ -3,7 +3,7 @@ Link naar live demo: https://lottetekulve.github.io/web-app-from-scratch-2021/
 
 <!-- ☝️ replace this description with a description of your own work -->
 
-# Table of content:
+## Table of content:
 - About the app
 - Get de data van de api
 - Gebruik van de data
