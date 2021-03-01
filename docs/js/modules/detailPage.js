@@ -1,5 +1,7 @@
 import getData from './api.js'
 
+
+///function for detail page///
 export default function renderArtObject (objectNumber) {
     const url = `https://www.rijksmuseum.nl/api/nl/collection/${objectNumber.toUpperCase()}?key=7TAeATmh`
 
@@ -8,9 +10,12 @@ export default function renderArtObject (objectNumber) {
   })
 }
 
-  function renderSingleArtObject(data) {
-    clearElement("section1")
+//fucntion for each art object///
 
+  function renderSingleArtObject(data) {
+    clearElement(section1)
+
+    //create elements//
     const app = document.getElementById("section2"),
       container = document.createElement("section"),
       picture = document.createElement("img"),
@@ -19,6 +24,8 @@ export default function renderArtObject (objectNumber) {
       objectNr = document.createElement("h4"),
       productionPlace = document.createElement("p");
 
+
+      //give values to the elements//
     container.setAttribute('class', 'container2');
     picture.src = data.webImage.url;
     title.textContent = data.longTitle;
@@ -26,7 +33,7 @@ export default function renderArtObject (objectNumber) {
     objectNr.textContent = data.objectNumber;
     productionPlace.textContent = data.productionPlaces;
 
-    // puts the attributes in the containers
+    // puts the attributes in the containers and sections
     app.appendChild(container);
     container.appendChild(picture);
     container.appendChild(title);
