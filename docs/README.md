@@ -61,7 +61,7 @@ Een klein voorbeeld van reduce
 
 ## Feedback aan de gebruiker
 Loadingstate:
-Dit hb ik gedaan doormiddel van een timer.
+Dit heb ik gedaan doormiddel van een timer.
 `setTimeout(() => loader.style.display = 'none', 2000);`
 
 ## Proces per week
