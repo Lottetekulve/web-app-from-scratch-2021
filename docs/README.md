@@ -18,18 +18,37 @@ In deze API is voor alle art objecten uit het rijksmuseum informatie te vinden. 
 Er komt overzichtspagina waarbij je alle art objects kan zien, samen met hun titel en de kunstenaar. Op de overzichtspagina komen filters om makkelijk een art object te kunnen terug vinden. Daarnaast krijgt elk art object een eigen detail page waar nog wat meer informatie te vinden zal zijn over de kunstwerken.
 
 # Get de data van de api:
-- export default function getData(url) { 
-  return fetch(url)
-    .then((response) => response.json())
-    .catch((err) => console.log("Error: " + err));
-}
-
+- `export default function getData(url) { `
+  `return fetch(url)`
+    `.then((response) => response.json())`
+   ` .catch((err) => console.log("Error: " + err));`
+`}`
 
 # Gebruik van de data
+- `export function render(data) {`
+  `clearElement(section2)`
+
+- `link.href = #artobject/${data.objectNumber};`
+  `title.textContent = data.title;`
+
+- `link.appendChild(container);`
+  `container.appendChild(picture);`
 
 # Filter, map & reduce
+Filter:
+- `function buttonFunction2 () {`
+      `clearElement(section1)`
+     ` getData(url).then((data) => `
+     ` { let objectsOfArt = data.artObjects`
+       ` let objectsOfArt2 = (objectsOfArt).filter(function(filteredData)`
+       ` {`
+         ` return filteredData.productionPlaces != '' } );`
+     ` {`
+       ` objectsOfArt2.forEach((artObject) => { render(artObject) } );`
+   ` }}); }}`
 
 # Feedback aan de gebruiker
+
 
 # Proces per week
 Week 3
