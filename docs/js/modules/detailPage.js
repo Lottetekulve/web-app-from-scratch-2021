@@ -1,5 +1,5 @@
 import getData from './api.js'
-
+import { clearElement } from './clear.js'
 
 ///function for detail page///
 export function renderArtObject (objectNumber) {
@@ -8,12 +8,6 @@ export function renderArtObject (objectNumber) {
     getData(url).then((data) => {
         renderSingleArtObject(data.artObject)
   })
-}
-
-
-//clean element function
-export function clearElement(element) {
-  element.innerHTML = ''
 }
 
 
@@ -29,10 +23,14 @@ function renderSingleArtObject(data) {
     title = document.createElement("h2"),
     author = document.createElement("h3"),
     objectNr = document.createElement("h4"),
-    productionPlace = document.createElement("p");
+    productionPlace = document.createElement("p"),
+    button = document.createElement("a"),
+    back = document.createElement("p");
 
     //give values to the elements//
   container.setAttribute('class', 'container2');
+  button.href = " "
+  back.textContent = "Back";
   picture.src = data.webImage.url;
   title.textContent = data.longTitle;
   author.textContent = data.principalOrFirstMaker;
@@ -40,7 +38,9 @@ function renderSingleArtObject(data) {
   productionPlace.textContent = data.productionPlaces;
 
   // puts the attributes in the containers and sections
+  app.appendChild(button)
   app.appendChild(container);
+  button.appendChild(back);
   container.appendChild(picture);
   container.appendChild(title);
   container.appendChild(author);

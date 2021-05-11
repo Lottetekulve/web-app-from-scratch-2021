@@ -1,7 +1,7 @@
-import { clearElement } from './detailPage.js'
+import { clearElement } from './clear.js'
 ////render for each artobject/////
 
-export function render(data) {
+export function renderOverview(data) {
   clearElement(section2)
 
   ///creating elememts///

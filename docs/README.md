@@ -40,17 +40,20 @@ Vervolgens gebruik ik deze code om van de data html elementen te maken.
 ## Filter, map & reduce
 ### Filter:
 Filter gebruik ik om de data te filteren en om een filter te hebben op de overzichtspagina.
-- `function buttonFunction2 () {`
-      `clearElement(section1)`
-     ` getData(url).then((data) => `
-     ` { let objectsOfArt = data.artObjects`
-       ` let objectsOfArt2 = (objectsOfArt).filter(function(filteredData)`
-       ` {`
-         ` return filteredData.productionPlaces != '' } );`
-     ` {`
-       ` objectsOfArt2.forEach((artObject) => { render(artObject) } );`
-   ` }}); }}`
-
+```
+function cityFilter(city){
+    
+    clearElement(section1)
+    getData(url).then((data) => 
+    { let objectsOfArt = data.artObjects
+        let objectsOfArt2 = (objectsOfArt).filter(function(filteredData)
+        {
+        return filteredData.productionPlaces == city } );
+    {
+        objectsOfArt2.forEach((artObject) => { renderOverview(artObject) } );
+    }});
+}
+```
 ### Map:
 Een klein voorbeeld van map
 `const map1 = array1.map(x => x * 2);`
@@ -62,7 +65,18 @@ Een klein voorbeeld van reduce
 ## Feedback aan de gebruiker
 Loadingstate:
 Dit heb ik gedaan doormiddel van een timer.
-`setTimeout(() => loader.style.display = 'none', 2000);`
+```
+.finally(function() {
+      let 
+          main = document.querySelector("main"),
+          loader = document.createElement("img");
+
+      loader.src = './images/loading12.gif';
+      main.appendChild(loader);
+
+      setTimeout(() => loader.style.display = 'none', 2000)
+    })
+```
 
 ## Proces per week
 ### Week 3
@@ -90,11 +104,11 @@ Do:
 Deze week hebben wij weer enkele opdrachten mee gekregen om aan te werken:
 
  1. Create actor diagram:
- ![](./images/actordiagram.png)
+ ![](./images/actordiagram2.png)
  In de actor diagram zie je welke modules ik heb en welke functions hierin gebruikt worden.
 
  2. Create interaction diagram:
-![](./images/interactiondiagram.png)
+![](./images/interactiondiagram2.png)
  In deze diagram zie je hoe de interactie gaat tussen de verschillende modules en functions.
 
  3. Handle routes to the detailpages:

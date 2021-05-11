@@ -22,6 +22,9 @@ html {
   justify-content: center;
 }
 
+div:nth-child(2){
+  display: none;
+}
 
 
 /* teksten */
